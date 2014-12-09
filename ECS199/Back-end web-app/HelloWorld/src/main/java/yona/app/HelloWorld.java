@@ -18,6 +18,8 @@ import javax.ws.rs.core.Response;
 @Path("/api")
 public class HelloWorld {
  
+	String dir = "C:/Users/Watson Wong/Documents/ecs199/HelloWorld/test.db";
+	
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("/test")
@@ -33,7 +35,6 @@ public class HelloWorld {
     public User get(@PathParam("username") String username){
     	Connection c = null;
         try {
-        	String dir = "C:/Users/Watson Wong/Documents/ecs199/HelloWorld/test.db";
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:"+dir);
             c.setAutoCommit(false);
@@ -58,11 +59,10 @@ public class HelloWorld {
     
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    @Path("/newUser/{userName}/")
+    @Path("/newUser")
     public Response newUser(User user){
     	Connection c = null;
         try {
-        	String dir = "C:/Users/Watson Wong/Documents/ecs199/HelloWorld/test.db";
             Class.forName("org.sqlite.JDBC");
             c = DriverManager.getConnection("jdbc:sqlite:"+dir);
             c.setAutoCommit(false);
