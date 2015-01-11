@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0gP-Zi-Bht">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Nexa Light.otf">
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+            <string>NexaLight</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="_99Fall" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="199Fall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="JfL-fu-GHt">
+                                <rect key="frame" x="-15" y="100" width="444" height="295"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Js3-hw-Uuq" appends="YES" id="svU-cY-eBE"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="Js3-hw-Uuq"/>
+            </objects>
+            <point key="canvasLocation" x="-579" y="68"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iU3-k9-q00">
+            <objects>
+                <viewController id="0gP-Zi-Bht" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MV2-yj-tnc"/>
+                        <viewControllerLayoutGuide type="bottom" id="JNf-p4-q9k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="srF-Oz-NEw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IM1-LO-9Oc">
+                                <rect key="frame" x="76" y="385" width="270" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1lP-KH-bWz">
+                                <rect key="frame" x="75" y="464" width="265" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-ji-ie6">
+                                <rect key="frame" x="76" y="363" width="112" height="21"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpI-uy-hfM">
+                                <rect key="frame" x="75" y="440" width="119" height="21"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-tE-HfN">
+                                <rect key="frame" x="76" y="567" width="265" height="37"/>
+                                <color key="backgroundColor" red="0.13333333333333333" green="0.11764705882352941" blue="0.49803921568627452" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
+                                <state key="normal" title="create account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="J7P-Ax-4h7" kind="showDetail" id="BYG-Rf-6UP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywP-MB-J0s">
+                                <rect key="frame" x="75" y="522" width="265" height="37"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1176470588" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
+                                <state key="normal" title="enter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.40082465277777779" green="0.37468156019805732" blue="0.38323661976235707" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BE4-gW-K8B" kind="show" id="am1-QU-Lmk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="199Fall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oS9-7m-wee">
+                                <rect key="frame" x="24" y="13" width="366" height="217"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sign in" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIj-jk-TXQ">
+                                <rect key="frame" x="179" y="273" width="59" height="45"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="API-ZT-6t9"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7lU-Oe-Vda" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-22" y="68"/>
+        </scene>
+        <!--Main View (Feed, Me)-->
+        <scene sceneID="6ez-4F-ppn">
+            <objects>
+                <viewController title="Main View (Feed, Me)" id="oxc-TT-sQF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jqf-n5-HqG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZCV-ze-hld"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFill" id="XPJ-8R-AU6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1798827_10152449606283873_1663395262541613126_n.png" translatesAutoresizingMaskIntoConstraints="NO" id="9gf-0g-Dg5">
+                                <rect key="frame" x="124" y="88" width="166" height="166"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Corina Putinar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXo-5z-ddc">
+                                <rect key="frame" x="142" y="271" width="131" height="21"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xei-GY-fFs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.1333333333" green="0.1176470588" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Your Profile" id="4Ws-0M-9lf">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="zyN-ra-dub"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="u1s-Y4-k7A">
+                                <rect key="frame" x="48" y="376" width="319" height="29"/>
+                                <segments>
+                                    <segment title="Questions Asked"/>
+                                    <segment title="Questions Answered"/>
+                                </segments>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3,121" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrJ-q9-oOs">
+                                <rect key="frame" x="172" y="492" width="70" height="32"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="32"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2014-12-09 at 12.32.01 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-7t-Qdz">
+                                <rect key="frame" x="64" y="154" width="33" height="33"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2014-12-09 at 12.32.53 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="ihQ-LI-0HH">
+                                <rect key="frame" x="316" y="154" width="33" height="33"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1333333333" green="0.1176470588" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="eme-gD-vb5"/>
+                    <navigationItem key="navigationItem" title="Title" id="cxL-FD-OTR"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YhO-ZZ-7CT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1888" y="820"/>
+        </scene>
+        <!--Main View (Feed, Me)-->
+        <scene sceneID="yxY-dY-ccP">
+            <objects>
+                <viewController title="Main View (Feed, Me)" id="BE4-gW-K8B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rCu-wz-KBA"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ap-VP-hlZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7FN-ON-IV5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KKh-1e-KQn">
+                                <rect key="frame" x="29" y="63" width="357" height="398"/>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nEx-kD-4Dd">
+                                <rect key="frame" x="256" y="508" width="100" height="102"/>
+                                <state key="normal" backgroundImage="Yes.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZS-ch-mVT">
+                                <rect key="frame" x="73" y="508" width="104" height="102"/>
+                                <state key="normal" backgroundImage="No.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YQt-oQ-N0v">
+                                <rect key="frame" x="-93" y="0.0" width="600" height="44"/>
+                                <color key="barTintColor" red="0.1333333333" green="0.1176470588" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="0.0"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="YON" id="mn1-iR-Wi2"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="WrZ-lc-RqZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYw-U8-ajl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1908" y="-402"/>
+        </scene>
+        <!--Main View (Feed, Me)-->
+        <scene sceneID="tt6-PW-wKe">
+            <objects>
+                <tabBarController title="Main View (Feed, Me)" id="rjR-nr-PCb" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="zpI-CV-CK4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BE4-gW-K8B" kind="relationship" relationship="viewControllers" id="RkA-T0-tRe"/>
+                        <segue destination="oxc-TT-sQF" kind="relationship" relationship="viewControllers" id="D5F-c3-RIr"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ANq-kN-JwY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1355" y="592"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t5L-Pm-Rwv">
+            <objects>
+                <viewController id="J7P-Ax-4h7" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EQ8-a1-6Me"/>
+                        <viewControllerLayoutGuide type="bottom" id="qJG-yG-VBl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pc8-9X-JQD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xHL-tC-K7E">
+                                <rect key="frame" x="60" y="319" width="292" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yt-K3-FrZ">
+                                <rect key="frame" x="60" y="377" width="292" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M9U-4q-LVZ">
+                                <rect key="frame" x="60" y="438" width="292" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cvf-QD-ilg">
+                                <rect key="frame" x="60" y="511" width="292" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="full name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlV-uS-PvG">
+                                <rect key="frame" x="60" y="296" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XOx-IB-DGa">
+                                <rect key="frame" x="59" y="357" width="51" height="21"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FYW-ef-nVN">
+                                <rect key="frame" x="59" y="415" width="80" height="21"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guk-6M-mEl">
+                                <rect key="frame" x="60" y="585" width="292" height="42"/>
+                                <color key="backgroundColor" red="0.1333333333" green="0.1176470588" blue="0.49803921569999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="19"/>
+                                <state key="normal" title="done!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BE4-gW-K8B" kind="show" id="BPe-v1-IQu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="199Fall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="etP-Qh-JvT">
+                                <rect key="frame" x="25" y="33" width="365" height="220"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="sign up!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRb-JI-O2A">
+                                <rect key="frame" x="180" y="246" width="68" height="28"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="re-enter password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CY2-kY-isA">
+                                <rect key="frame" x="60" y="488" width="164" height="21"/>
+                                <fontDescription key="fontDescription" name="NexaLight" family="Nexa Light" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v6B-Ub-Q5N"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NvU-SM-bHE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="560" y="514"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1798827_10152449606283873_1663395262541613126_n.png" width="193" height="196"/>
+        <image name="199Fall.jpg" width="2550" height="3300"/>
+        <image name="No.png" width="432" height="428"/>
+        <image name="Screen Shot 2014-12-09 at 12.32.01 PM.png" width="31" height="27"/>
+        <image name="Screen Shot 2014-12-09 at 12.32.53 PM.png" width="35" height="31"/>
+        <image name="Yes.png" width="417" height="420"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="am1-QU-Lmk"/>
+    </inferredMetricsTieBreakers>
+</document>
