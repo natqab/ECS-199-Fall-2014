@@ -14,6 +14,10 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+
+import com.sun.jersey.api.client.Client;
+import com.sun.jersey.api.client.ClientResponse;
+import com.sun.jersey.api.client.WebResource;
  
 @Path("/api")
 public class HelloWorld {
@@ -59,7 +63,7 @@ public class HelloWorld {
     
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    @Path("/newUser")
+    @Path("/newUser/")
     public Response newUser(User user){
     	Connection c = null;
         try {
@@ -81,5 +85,22 @@ public class HelloWorld {
             String output = "Database failed";
             return Response.status(200).entity(output).build();
         }
+    }
+    
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("/testPost/{username}/{password}")
+    public String testPost(@PathParam("username") String username, @PathParam("password") String password) {
+    	Client client = Client.create();
+    	 
+		WebResource webResource = client
+		   .resource("http://localhost:8080/HelloWorld/api/newUser");
+		
+		String input = "{\"username\":\""+username+"\",\"password\":\""+password+"\"}";
+		
+		ClientResponse response = webResource.type("application/json")
+				   .post(ClientResponse.class, input);
+    	
+		return response.getEntity(String.class);
     }
 }
